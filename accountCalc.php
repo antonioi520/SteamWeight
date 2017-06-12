@@ -56,7 +56,7 @@ $priceperGame = 0;
 
 
 
-$jsonGames = file_get_contents("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={$key}&steamid={$id}&format=json&include_appinfo=1");
+$jsonGames = file_get_contents("https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={$key}&steamid={$id}&format=json&include_appinfo=1");
 $gameList = json_decode($jsonGames);
 
 //Get game icons
@@ -136,7 +136,7 @@ try {
         }
     }
     else{
-        $json = file_get_contents("http://store.steampowered.com/api/appdetails?appids={$out}&cc=USD&filters=price_overview");
+        $json = file_get_contents("https://store.steampowered.com/api/appdetails?appids={$out}&cc=USD&filters=price_overview");
         $allGames = json_decode($json, true);
         foreach($allgame as $allgames){
             try {
