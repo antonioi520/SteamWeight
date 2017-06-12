@@ -240,7 +240,40 @@ $gameWeight = 0.3125;
 $weightCalculation = $gameCounter * $gameWeight;
 //echo "actual pounds: "; echo $weightCalculation; echo "\n";
 
+//chickens
+$chickenWeight = 1.9;
+$chickenCalculation = $weightCalculation / $chickenWeight;
+//based on Booted Bantam chicken
 
+//cows
+$cowWeight = 2400;
+$cowCalculation = $weightCalculation / $cowWeight;
+//based on male cow
+
+//goats
+$goatWeight = 60;
+$goatCalculation = $weightCalculation / $goatWeight;
+//based on boer goat
+
+//dragon
+$dragonWeight = 22046.2;
+$dragonCalculation = $weightCalculation / $dragonWeight;
+//based on lightweight dragon calculation from dnd
+
+//gold bar
+$goldbarWeight = 27.33732;
+$goldbarCalculation = $weightCalculation / $goldbarWeight;
+//based on gold idiot
+
+//unladen african swallow
+$africanswallowWeight = 0.0462971128238593;
+$africanswallowCalculation = $weightCalculation / $africanswallowWeight;
+//based on unladen african swallow
+
+//this sites developers
+$devWeight = 147.5;
+$devCalculation = $weightCalculation / $devWeight;
+//averaged between 2 devs
 
 if (!$summaryResult || !$summaryResult->response || !$recentgameResult || !$recentgameResult->response) {
     die('Failed to get profile data!');
