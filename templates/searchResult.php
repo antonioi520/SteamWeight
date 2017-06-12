@@ -66,7 +66,7 @@ a {
 
         <div class="col-md-3">
             <a href="<?=$profileLink;?>" style="margin-top: 2%; margin-left;20%;">
-               <img class="avatar" src="<?php echo $avatar ?>" style="margin-left:15%; margin-top:4%;">
+               <img class="avatar" src="<?=$avatar?>" style="margin-left:15%; margin-top:4%;">
             </a>
         </div>
         <div class="col-md-3" style="padding-left:0%;">
